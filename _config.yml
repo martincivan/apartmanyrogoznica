@@ -31,10 +31,13 @@ url: "https://apartmanyrogoznica.sk" # the base hostname & protocol for your sit
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-leaflet
-  - jekyll-compress-images
 
-compress_images:
-  images_path: "assets/images/**/*.{gif,png,jpg,jpeg,svg}"
+jekyll_image_optim:
+  image_optim:
+    jpegoptim: { allow_lossy: true, max_quality: 85 }
+    optipng: {}
+  resize_to: "1600x1600>"
+  threads: 8
 
 include:
   - "_pages"

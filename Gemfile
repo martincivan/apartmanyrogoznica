@@ -31,4 +31,7 @@ gem "minimal-mistakes-jekyll"
 gem "jekyll-leaflet"
 gem "csv"
 gem "base64"
-gem 'jekyll-compress-images'
+
+gem "image_optim"
+gem "image_optim_pack"
+gem "mini_magick"
