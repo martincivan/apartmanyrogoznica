@@ -24,8 +24,13 @@ Sú ideálne pre trávenie pokojnej dovolenky pre rodiny s deťmi, prípadne sta
 
 Sú tu možnosti požičania motorových člnov, potápania, lodných a bicyklových výletov po okolí. 
 
+## Galéria
 {% include image-gallery.html folder="/assets/images/exterier/" %}
 
+## Videá
+{% include video-gallery.html folder="/assets/images/exterier/" %}
+
+## Mapa
 {% leaflet_map {"zoom" : 16,
 "divId": "myleaflet" } %}
 

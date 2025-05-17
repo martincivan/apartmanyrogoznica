@@ -14,7 +14,11 @@ Priestranná kúpeľňa  má sprchovací kút, WC a práčku.
 
 Parkovanie k apartmánu je zabezpečené v podzemnej garáži s možnosťou úschovy bicyklov príp. športových potrieb.
 
-
+## Galéria
 {% include image-gallery.html folder="/assets/images/apartman-garden/" %}
 
+## Videá
+{% include video-gallery.html folder="/assets/images/apartman-garden/" %}
+
+## Ceny a dostupnosť
 {% include calendar.html availability=site.data.availability-garden prices=site.data.prices %}

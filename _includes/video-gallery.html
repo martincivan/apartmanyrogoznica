@@ -1,0 +1,9 @@
+<div>
+    {% for file in site.static_files sorted %}
+        {% if file.path contains include.folder %}
+    {% if file.extname == '.mp4'%}
+        <video src="{{ file.path | relative_url }}" />
+    {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>
