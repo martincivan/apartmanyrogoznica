@@ -35,3 +35,5 @@ gem "base64"
 gem "image_optim"
 gem "image_optim_pack"
 gem "mini_magick"
+
+gem "psych", "<4"
