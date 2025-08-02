@@ -37,3 +37,4 @@ gem "image_optim_pack"
 gem "mini_magick"
 
 gem "psych", "<4"
+gem "erb"

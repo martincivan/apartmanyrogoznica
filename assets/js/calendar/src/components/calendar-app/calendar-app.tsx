@@ -27,6 +27,8 @@ export class CalendarApp {
   }
 
   private getPriceForDate(date: string, prices: any) {
+    return null;
+    // @ts-ignore
     const [year, month] = date.split('-');
     const monthPrices = prices[year]?.[month];
     return monthPrices || null;
@@ -92,12 +94,23 @@ export class CalendarApp {
     const { currentYear, currentMonth } = this;
     let newMonth = currentMonth + increment;
     let newYear = currentYear
+
+    const today = new Date();
+    const currentRealMonth = today.getMonth();
+    const currentRealYear = today.getFullYear();
+
     if (newMonth < 0) {
       newMonth = 11
       newYear = currentYear - 1
-    } else  if (newMonth > 11) {
+    } else if (newMonth > 11) {
       newMonth = 0
       newYear = currentYear + 1
+    }
+
+    if (newYear < currentRealYear || (newYear === currentRealYear && newMonth < currentRealMonth)) {
+      if (increment < 0) {
+        return;
+      }
     }
 
     const prices = this.parsePrices();

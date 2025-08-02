@@ -12,6 +12,7 @@ GEM
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
+    erb (5.0.2)
     eventmachine (1.2.7)
     exifr (1.4.1)
     faraday (2.12.2)
@@ -220,6 +221,7 @@ PLATFORMS
 DEPENDENCIES
   base64
   csv
+  erb
   http_parser.rb (~> 0.6.0)
   image_optim
   image_optim_pack
